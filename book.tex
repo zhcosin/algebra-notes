@@ -1,0 +1,40 @@
+
+% created: 2017-08-21
+\documentclass{ctexbook}
+\ctexset{
+  part/name={第,部分},
+  part/number=\chinese{part}
+}
+
+\input{use-packages}
+\input{cmd-env}
+
+\title{\kaishu{代数学笔记}}
+\author{zhcosin}
+\date{\today 更新}
+
+\begin{document}
+
+\maketitle
+
+\pagenumbering{Roman}    %Roman字体书写页码
+
+\include{preface}
+
+\setcounter{page}{1}   %重新开始页码
+\include{tableofcontents}
+
+\setcounter{page}{1}   %重新开始页码
+\mainmatter    %前言和目录页码结束，正文重新开始设置页码
+
+\part{线性代数}
+\part{抽象代数}
+
+\input{bibliography}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
